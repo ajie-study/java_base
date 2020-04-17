@@ -1,4 +1,4 @@
-package thread;
+package com.study.thread;
 
 /**
  * 面试题：

@@ -1,4 +1,4 @@
-package Model;
+package com.study.model;
 
 /**
  * @author ajie

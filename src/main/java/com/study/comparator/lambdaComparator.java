@@ -1,6 +1,6 @@
-package comparator;
+package com.study.comparator;
 
-import Model.User;
+import com.study.model.User;
 
 import java.util.ArrayList;
 import java.util.Collections;

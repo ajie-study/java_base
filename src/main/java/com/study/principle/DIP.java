@@ -1,4 +1,4 @@
-package principle;
+package com.study.principle;
 
 /**
  * @version ：V1.0

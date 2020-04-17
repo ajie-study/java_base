@@ -1,4 +1,4 @@
-package thread;
+package com.study.thread;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

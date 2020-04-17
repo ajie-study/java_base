@@ -1,4 +1,4 @@
-package principle;
+package com.study.principle;
 
 import java.util.ArrayList;
 import java.util.List;

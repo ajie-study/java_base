@@ -1,7 +1,10 @@
 package com.study.test;
 
+import org.junit.Test;
+
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @version ：V1.0
@@ -38,5 +41,30 @@ public class test {
         String hourFormat = String.format("%1$02d", hour);
         return year + monthFormat + dayFormat + hourFormat;
 
+    }
+
+    @Test
+    public void test(){
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
+        //2.1获取当前时间
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+
+        String key = "UPDATE_GOOD_LIST:" + hour;
+
+        System.out.println(hour);
+        System.out.println(key);
+    }
+
+
+    @Test
+    public void test2(){
+        AtomicInteger trendType = new AtomicInteger(0);
+        System.out.println(trendType);
+        trendType.addAndGet(1);
+        System.out.println(trendType);
+        trendType.addAndGet(-1);
+        System.out.println(trendType);
     }
 }

@@ -2,8 +2,7 @@ package com.study.test;
 
 import org.junit.Test;
 
-import java.util.Calendar;
-import java.util.Date;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -44,7 +43,7 @@ public class test {
     }
 
     @Test
-    public void test(){
+    public void test() {
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
@@ -59,12 +58,33 @@ public class test {
 
 
     @Test
-    public void test2(){
+    public void test2() {
         AtomicInteger trendType = new AtomicInteger(0);
         System.out.println(trendType);
         trendType.addAndGet(1);
         System.out.println(trendType);
         trendType.addAndGet(-1);
         System.out.println(trendType);
+    }
+
+
+    @Test
+    public void test3() {
+        String updateTime = "2020-04-27 11:00:00";
+
+        String currentTime = "2020-04-27 10:00:00";
+
+        int i = currentTime.compareTo(updateTime);
+
+        System.out.println(i);
+    }
+
+
+    @Test
+    public void test4() {
+        boolean abc = "ABC".equals("ABC");
+
+        System.out.println(abc);
+
     }
 }
